@@ -6,15 +6,7 @@ export default function Home() {
   const [asin, setAsin] = useState('');
   const [umsatz, setUmsatz] = useState(0);
   const [gewicht, setGewicht] = useState(0);
-const [ergebnis, setErgebnis] = useState<{
-  referralFee: string;
-  fulfillmentFee: string;
-  storageFee: string;
-  placementFee: string;
-  lowInventorySurcharge: string;
-  gesamtGebuehren: string;
-  nettoGewinn: string;
-} | null>(null);
+  const [ergebnis, setErgebnis] = useState<any>(null);
 
   const berechneGebuehren = () => {
     // Einfache 2025-FBA-Gebühren-Logik (DE-Markt, Standard-Produkt)
